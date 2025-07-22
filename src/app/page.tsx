@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import SkillCard from "@/components/SkillCard";
 import { skills } from "@/data/skills";
 import { Github, Mail } from "lucide-react";
@@ -20,7 +21,7 @@ export default function Home() {
 
 function Intro() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
       <img
         src="/nutan.png"
         alt="Nutan"

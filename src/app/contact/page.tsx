@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import { Mail, MapPin } from "lucide-react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
@@ -19,40 +20,7 @@ export default function ContactPage() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <form className="space-y-4">
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Name</label>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200 outline-none"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">Email</label>
-              <input
-                type="email"
-                placeholder="you@example.com"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200 outline-none"
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-gray-600 mb-1">
-                Message
-              </label>
-              <textarea
-                rows={4}
-                placeholder="Your message..."
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200 outline-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-md shadow transition"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
 
           <div className="space-y-4 text-sm text-gray-700">
             <div className="flex items-center gap-3">
