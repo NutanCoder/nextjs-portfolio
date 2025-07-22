@@ -5,7 +5,7 @@ export async function POST(request: Request) {
 
   const { name, email, subject, message } = body;
 
-  const FORM_ID = process.env.FORM_ID;
+  const url = process.env.FORM_URL as string;
 
   const formData = new URLSearchParams();
   formData.append("entry.1883219675", name);
@@ -13,16 +13,13 @@ export async function POST(request: Request) {
   formData.append("entry.555385700", subject);
   formData.append("entry.1509220846", message);
 
-  const response = await fetch(
-    `https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`,
-    {
-      method: "POST",
-      body: formData,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    }
-  );
+  const response = await fetch(url, {
+    method: "POST",
+    body: formData,
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  });
 
   if (response.ok) {
     return NextResponse.json({ success: true });
