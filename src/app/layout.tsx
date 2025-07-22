@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
 import NextTopLoader from "nextjs-toploader";
+import TopLoader from "@/components/TopLoader";
 
 export const metadata: Metadata = {
   title: "Nutan | Frontend Developer Portfolio",
@@ -37,7 +38,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <NextTopLoader color="blue" />
+        <TopLoader />
         <Navbar />
         {children}
         <Footer />

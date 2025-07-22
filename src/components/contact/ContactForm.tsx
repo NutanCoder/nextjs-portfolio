@@ -40,7 +40,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-4 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md dark:shadow-lg transition"
+      className="space-y-4 bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md dark:shadow-lg transition"
     >
       <div>
         <label className="block text-sm text-gray-700 dark:text-gray-300 mb-1">

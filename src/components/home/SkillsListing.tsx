@@ -1,8 +1,8 @@
-import { skills } from "@/data/skills";
+import { skills } from "@/data/SkillsData";
 import SkillCard from "../SkillCard";
 import Link from "next/link";
 
-export default function Skills() {
+export default function SkillsListing({ isPage }: { isPage: boolean }) {
   return (
     <section className="bg-[#f4f8fc] dark:bg-gray-700 py-12">
       <div className="max-w-6xl mx-auto px-6 text-center">
@@ -15,20 +15,22 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills
-            .filter((skill) => skill.isFeatured)
+            .filter((skill) => (isPage ? true : skill.isFeatured))
             .map((skill) => (
               <SkillCard skill={skill} key={skill.name} />
             ))}
         </div>
 
-        <div className="mt-10">
-          <Link
-            href="/skills"
-            className="inline-block px-5 py-2.5 bg-blue-600 text-white font-medium rounded-xl shadow hover:bg-blue-700 transition"
-          >
-            View All Skills
-          </Link>
-        </div>
+        {!isPage && (
+          <div className="mt-10">
+            <Link
+              href="/skills"
+              className="inline-block px-5 py-2.5 bg-blue-600 text-white font-medium rounded-xl shadow hover:bg-blue-700 transition"
+            >
+              View All Skills
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

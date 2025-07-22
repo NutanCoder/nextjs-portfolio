@@ -1,5 +1,4 @@
-import SkillCard from "@/components/SkillCard";
-import { skills } from "@/data/skills";
+import SkillsListing from "@/components/home/SkillsListing";
 
 export const metadata = {
   title: "Skills | Nutan",
@@ -8,21 +7,5 @@ export const metadata = {
 };
 
 export default function Skills() {
-  return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-12">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-6xl font-bold text-gray-900 dark:text-white mb-2">
-          Skills
-        </h2>
-        <p className="text-gray-600  dark:text-gray-300 mb-10">
-          Key skills that define my professional identity.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((skill) => (
-            <SkillCard skill={skill} key={skill.name} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <SkillsListing isPage={true} />;
 }

@@ -1,6 +1,6 @@
-import Intro from "@/components/home/into";
-import Projects from "@/components/home/projects";
-import Skills from "@/components/home/skills";
+import Intro from "@/components/home/IntroCard";
+import ProjectListing from "@/components/home/ProjectListing";
+import SkillsListing from "@/components/home/SkillsListing";
 
 export const metadata = {
   title: "Nutan | Frontend Developer",
@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Intro />
-      <Skills />
-      <Projects />
+      <SkillsListing isPage={false} />
+      <ProjectListing isPage={false} />
     </>
   );
 }

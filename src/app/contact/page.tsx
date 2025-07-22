@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/contact/ContactForm";
 import { Mail, MapPin } from "lucide-react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
@@ -11,7 +11,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4 py-16">
-      <div className="max-w-3xl w-full bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8">
+      <div className="max-w-3xl w-full bg-white dark:bg-gray-800 p-8">
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 text-center">
           Contact Me
         </h2>
