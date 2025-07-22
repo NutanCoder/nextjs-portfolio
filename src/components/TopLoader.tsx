@@ -4,7 +4,7 @@ import NextTopLoader from "nextjs-toploader";
 import { useEffect, useState } from "react";
 
 export default function TopLoader() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>();
 
   useEffect(() => {
     const target = document.documentElement;
@@ -17,6 +17,8 @@ export default function TopLoader() {
         ) {
           const isDark = target.classList.contains("dark");
           setIsDarkMode(isDark);
+        } else {
+          setIsDarkMode(false);
         }
       }
     });
@@ -25,6 +27,8 @@ export default function TopLoader() {
 
     return () => observer.disconnect();
   }, []);
+
+  if (isDarkMode == undefined) return null;
 
   return (
     <NextTopLoader
