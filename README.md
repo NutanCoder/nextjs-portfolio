@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hi, I'm Nutan Singh
 
-## Getting Started
+### 🚀 Frontend Developer | Passionate about building modern, responsive web apps
 
-First, run the development server:
+I'm a Frontend Developer with **3+ years** of experience crafting intuitive and performant user interfaces. I love turning ideas into reality using the power of **React**, **Next.js**, and **Tailwind CSS**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Languages:** HTML, CSS, JavaScript, TypeScript, PHP
+- **Frameworks & Libraries:** React.js, Next.js, Redux, Laravel, Bootstrap, Material UI, Tailwind CSS
+- **Backend/Database:** Supabase, Firebase, MySQL
+- **Tools & Others:** Git, REST API, GraphQL, JSON, i18n, CI/CD
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 💼 Experience
 
-To learn more about Next.js, take a look at the following resources:
+- **Software Developer at NSTACK INDIA** _(Jan 2024 – Present)_  
+  Working on scalable, production-grade React & Next.js apps with GraphQL, Supabase, and modern UI libraries.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend Developer at Wipro** _(Jul 2021 – Dec 2023)_  
+  Built UI components and helped migrate a server monitoring tool to React.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 📫 Let's Connect
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Portfolio Website](https://portfolio-nutan.vercel.app)
+- [LinkedIn](https://www.linkedin.com/in/nutan-singh-484018194/)
+- [GitHub](https://github.com/NutanCoder)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### ❤️ I’m currently looking for new opportunities
+
+If your team is hiring or you'd like to collaborate on open-source, feel free to reach out!
