@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Career | Nutan Singh",
+  title: "Career | Nutan",
   description:
-    "Learn about Nutan Singh’s professional journey, previous roles at Wipro and NSTACK, and major accomplishments in frontend development.",
+    "Learn about Nutan’s professional journey, previous roles at Wipro and NSTACK, and major accomplishments in frontend development.",
 };
 
 export default function CareerPage() {

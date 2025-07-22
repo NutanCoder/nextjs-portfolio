@@ -12,6 +12,7 @@ import { LayoutDashboard } from "lucide-react";
 export const projects = [
   {
     title: "Expense Manager (React + Supabase)",
+    isFeatured: true,
     description:
       "Modern React-based expense tracker with auth, categories, and live DB.",
     tech: [
@@ -40,6 +41,8 @@ export const projects = [
   },
   {
     title: "Stay Easy (Next.js + Supabase)",
+    isFeatured: true,
+
     description:
       "PG rental platform with property listing, auth, and location filter.",
     tech: [
@@ -68,6 +71,8 @@ export const projects = [
   },
   {
     title: "Library App",
+    isFeatured: true,
+
     description:
       "Manage and track books, issue records, and users with Supabase backend.",
     tech: [

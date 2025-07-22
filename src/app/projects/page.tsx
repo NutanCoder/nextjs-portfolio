@@ -2,9 +2,9 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
 export const metadata = {
-  title: "Projects | Nutan Singh",
+  title: "Projects | Nutan",
   description:
-    "Check out featured projects by Nutan Singh including Travel Planner, Expense Manager, Trello Clone, and more built using React, Supabase, and Next.js.",
+    "Check out featured projects by Nutan including Travel Planner, Expense Manager, Trello Clone, and more built using React, Supabase, and Next.js.",
 };
 
 export default function ProjectsPage() {

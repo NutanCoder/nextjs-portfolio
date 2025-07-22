@@ -2,9 +2,9 @@ import SkillCard from "@/components/SkillCard";
 import { skills } from "@/data/skills";
 
 export const metadata = {
-  title: "Skills | Nutan Singh",
+  title: "Skills | Nutan",
   description:
-    "Explore the key technical skills of Nutan Singh including React, TypeScript, Tailwind, GraphQL, Supabase, and more.",
+    "Explore the key technical skills of Nutan including React, TypeScript, Tailwind, GraphQL, Supabase, and more.",
 };
 
 export default function Skills() {

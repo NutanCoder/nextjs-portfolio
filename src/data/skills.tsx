@@ -40,23 +40,30 @@ export const skills = [
   },
   {
     name: "React.js",
+    isFeatured: true,
     icon: <FaReact className="w-10 h-10 text-cyan-500" />,
     description:
       "Craft interactive UIs using components, state, props, and virtual DOM.",
   },
   {
     name: "Next.js",
+    isFeatured: true,
+
     icon: <SiNextdotjs className="w-10 h-10 text-black" />,
     description:
       "Build dynamic apps with routing, layouts, loading UI, and API routes.",
   },
   {
     name: "TypeScript",
+    isFeatured: true,
+
     icon: <SiTypescript className="w-10 h-10 text-blue-700" />,
     description: "Strongly typed JavaScript to build scalable applications.",
   },
   {
     name: "Redux",
+    isFeatured: true,
+
     icon: <SiRedux className="w-10 h-10 text-purple-600" />,
     description:
       "Manage global state predictably in large-scale React applications.",
@@ -80,12 +87,16 @@ export const skills = [
   },
   {
     name: "Supabase",
+    isFeatured: true,
+
     icon: <SiSupabase className="w-10 h-10 text-green-600" />,
     description:
       "Open-source Firebase alternative for auth, database, and storage.",
   },
   {
     name: "GraphQL",
+    isFeatured: true,
+
     icon: <SiGraphql className="w-10 h-10 text-pink-600" />,
     description:
       "Query APIs efficiently with a strongly-typed and flexible syntax.",

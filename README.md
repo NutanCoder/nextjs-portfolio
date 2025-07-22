@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Nutan Singh
+# 👋 Hi, I'm Nutan
 
 ### 🚀 Frontend Developer | Passionate about building modern, responsive web apps
 

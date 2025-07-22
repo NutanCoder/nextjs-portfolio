@@ -3,9 +3,9 @@ import { Mail, MapPin } from "lucide-react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
 export const metadata = {
-  title: "Contact | Nutan Singh",
+  title: "Contact | Nutan",
   description:
-    "Get in touch with Nutan Singh for frontend development roles, freelance projects, or collaborations. Let's connect!",
+    "Get in touch with Nutan for frontend development roles, freelance projects, or collaborations. Let's connect!",
 };
 
 export default function ContactPage() {
