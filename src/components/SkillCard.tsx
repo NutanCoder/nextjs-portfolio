@@ -6,9 +6,9 @@ export function SkillCard(props: any) {
   return (
     <div
       key={skill.name}
-      className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition-colors duration-300"
+      className="cursor-pointer bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition-colors duration-300"
     >
-      <div className="flex justify-center mb-4">{skill.icon}</div>
+      <div className="flex justify-center mb-4 dark:invert">{skill.icon}</div>
       <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
         {skill.name}
       </h3>
