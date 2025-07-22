@@ -3,17 +3,16 @@ import { notFound } from "next/navigation";
 import "highlight.js/styles/github-dark.css";
 import CodeHighlighter from "@/components/CodeHighlighter";
 
+type PageProps = Promise<{ slug: string }>;
+
 export async function generateStaticParams() {
   const slugs = getAllSlugs();
   return slugs.map((slug) => ({ slug }));
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const post = await getPost(params.slug);
+export default async function BlogPost({ params }: { params: PageProps }) {
+  const paramsData = await params;
+  const post = await getPost(paramsData.slug ?? "");
   if (!post) return notFound();
 
   return (
