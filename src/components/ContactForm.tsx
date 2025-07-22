@@ -32,43 +32,66 @@ export default function ContactForm() {
     }
 
     setLoading(false);
+
+    // Hide success after 5s
+    setTimeout(() => setSuccess(false), 5000);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-4 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md dark:shadow-lg transition"
+    >
       <div>
-        <label className="block text-sm text-gray-600 mb-1">Name</label>
+        <label className="block text-sm text-gray-700 dark:text-gray-300 mb-1">
+          Name
+        </label>
         <input
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200 outline-none"
+          required
+          className="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-md px-4 py-2 focus:ring focus:ring-blue-400 outline-none"
         />
       </div>
       <div>
-        <label className="block text-sm text-gray-600 mb-1">Email</label>
+        <label className="block text-sm text-gray-700 dark:text-gray-300 mb-1">
+          Email
+        </label>
         <input
           type="email"
           name="email"
           placeholder="you@example.com"
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200 outline-none"
+          required
+          className="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-md px-4 py-2 focus:ring focus:ring-blue-400 outline-none"
         />
       </div>
       <div>
-        <label className="block text-sm text-gray-600 mb-1">Message</label>
+        <label className="block text-sm text-gray-700 dark:text-gray-300 mb-1">
+          Message
+        </label>
         <textarea
           rows={4}
           name="message"
           placeholder="Your message..."
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200 outline-none"
+          required
+          className="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-md px-4 py-2 focus:ring focus:ring-blue-400 outline-none"
         />
       </div>
+
       <button
         type="submit"
-        className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-md shadow transition"
+        disabled={loading}
+        className="bg-blue-600 w-full cursor-pointer hover:bg-blue-700 disabled:opacity-60 text-white font-medium px-6 py-2 rounded-md shadow transition"
       >
-        Send Message
+        {loading ? "Sending..." : "Send Message"}
       </button>
+
+      {success && (
+        <p className="text-green-600 dark:text-green-400 text-sm mt-3">
+          ✅ Your message was sent successfully!
+        </p>
+      )}
     </form>
   );
 }

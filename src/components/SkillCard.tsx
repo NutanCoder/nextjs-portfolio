@@ -2,14 +2,19 @@ import React from "react";
 
 export function SkillCard(props: any) {
   const skill = props.skill;
+
   return (
     <div
       key={skill.name}
-      className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+      className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition-colors duration-300"
     >
       <div className="flex justify-center mb-4">{skill.icon}</div>
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">{skill.name}</h3>
-      <p className="text-gray-600 mb-4 text-sm">{skill.description}</p>
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+        {skill.name}
+      </h3>
+      <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+        {skill.description}
+      </p>
       <div className="flex justify-center">
         {[...Array(5)].map((_, i) => (
           <svg

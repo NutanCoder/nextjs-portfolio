@@ -4,25 +4,29 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export function ProjectCard({ project }: { project: any }) {
   return (
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
-      <div className="relative w-full h-48 rounded-lg shadow overflow-hidden mb-4">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-transform hover:scale-[1.02] p-4">
+      <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
         <Image
           src={project.image}
           alt={project.title}
-          width={400}
-          height={300}
-          className="object-cover h-48 border-1 rounded-lg shadow border-gray-400"
+          fill
+          className="object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
       </div>
 
-      <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
-      <p className="text-gray-600 text-sm mt-1">{project.description}</p>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+        {project.title}
+      </h3>
+      <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
+        {project.description}
+      </p>
 
       <div className="flex flex-wrap gap-2 mt-3">
         {project.tech.map((t: any) => (
           <div
             key={t.name}
-            className="flex items-center gap-1 text-sm text-gray-700"
+            className="flex items-center gap-1 text-sm text-gray-700 dark:text-gray-300"
           >
             {t.icon}
             <span>{t.name}</span>
@@ -36,7 +40,8 @@ export function ProjectCard({ project }: { project: any }) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 text-gray-800 rounded-full shadow-sm hover:shadow-md hover:bg-gray-200 transition"
+            aria-label={`View ${project.title} on GitHub`}
+            className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white rounded-full shadow-sm hover:shadow-md hover:bg-gray-200 dark:hover:bg-gray-600 transition"
           >
             <FaGithub className="w-4 h-4" />
             <span className="text-sm font-medium">GitHub</span>
@@ -47,7 +52,8 @@ export function ProjectCard({ project }: { project: any }) {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100 text-blue-700 rounded-full shadow-sm hover:shadow-md hover:bg-blue-200 transition"
+            aria-label={`Visit live site of ${project.title}`}
+            className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full shadow-sm hover:shadow-md hover:bg-blue-200 dark:hover:bg-blue-800 transition"
           >
             <FaExternalLinkAlt className="w-4 h-4" />
             <span className="text-sm font-medium">Live</span>

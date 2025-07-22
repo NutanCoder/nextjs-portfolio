@@ -9,10 +9,12 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 dark:bg-gray-900 py-12">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-5xl font-bold text-gray-900 mb-2">Projects</h2>
-        <p className="text-gray-600 mb-10">
+        <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">
+          Projects
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300 mb-10">
           A collection of featured work I’ve built recently.
         </p>
 

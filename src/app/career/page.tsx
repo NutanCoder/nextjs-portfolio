@@ -6,23 +6,25 @@ export const metadata = {
 
 export default function CareerPage() {
   return (
-    <section className="min-h-screen bg-gray-50 py-16 px-6">
+    <section className="min-h-screen bg-gray-50 dark:bg-gray-900 py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-white text-center mb-4">
           My Career Journey
         </h1>
-        <p className="text-center text-gray-600 max-w-xl mx-auto mb-10">
+        <p className="text-center text-gray-600 dark:text-gray-300 max-w-xl mx-auto mb-10">
           From building interfaces to architecting scalable frontend systems,
           here's a glimpse of my journey as a passionate Frontend Developer.
         </p>
 
         {/* NSTACK */}
-        <div className="bg-white rounded-xl shadow p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-blue-700">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-400">
             Software Developer – NSTACK INDIA
           </h2>
-          <p className="text-gray-600">Jan 2024 – Apr 2025</p>
-          <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
+          <p className="text-gray-600 dark:text-gray-400">
+            Jan 2024 – Apr 2025
+          </p>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mt-3 space-y-2">
             <li>
               Building scalable and responsive web applications using React.js,
               TypeScript, Tailwind CSS, Redux, and MUI.
@@ -43,12 +45,14 @@ export default function CareerPage() {
         </div>
 
         {/* WIPRO */}
-        <div className="bg-white rounded-xl shadow p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-blue-700">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-400">
             Software Engineer – Wipro Limited, Bengaluru
           </h2>
-          <p className="text-gray-600">Jul 2021 – Dec 2023</p>
-          <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
+          <p className="text-gray-600 dark:text-gray-400">
+            Jul 2021 – Dec 2023
+          </p>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mt-3 space-y-2">
             <li>
               Initially joined as a Frontend Developer building UI components
               using HTML, CSS, JavaScript, and Bootstrap.
@@ -69,9 +73,11 @@ export default function CareerPage() {
         </div>
 
         {/* Projects Summary */}
-        <div className="bg-white rounded-xl shadow p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-blue-700">Key Projects</h2>
-          <ul className="list-disc list-inside text-gray-700 mt-3 space-y-2">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-400">
+            Key Projects
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mt-3 space-y-2">
             <li>
               <strong>PG Search App (Next.js + Supabase):</strong> Built a
               full-featured PG rental platform with login/register, property
@@ -95,19 +101,21 @@ export default function CareerPage() {
         </div>
 
         {/* Education */}
-        <div className="bg-white rounded-xl shadow p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-blue-700">Education</h2>
-          <p className="text-gray-700 mt-2">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-400">
+            Education
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 mt-2">
             <strong>B.Tech in Computer Science</strong> – ITER, SOA University
           </p>
         </div>
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
             Open to exciting opportunities
           </h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
             I’m actively seeking frontend roles where I can grow, learn, and
             make a meaningful impact through code.
           </p>
