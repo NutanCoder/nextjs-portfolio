@@ -27,6 +27,7 @@ export const projects = [
   },
   {
     title: "Quiz App (React + Supabase)",
+    isFeatured: true,
     description:
       "Modern React-based Quiz App with auth,user profile and quiz management",
     tech: [
@@ -41,8 +42,6 @@ export const projects = [
   },
   {
     title: "Stay Easy (Next.js + Supabase)",
-    isFeatured: true,
-
     description:
       "PG rental platform with property listing, auth, and location filter.",
     tech: [
@@ -71,8 +70,6 @@ export const projects = [
   },
   {
     title: "Library App",
-    isFeatured: true,
-
     description:
       "Manage and track books, issue records, and users with Supabase backend.",
     tech: [
@@ -87,6 +84,7 @@ export const projects = [
   },
   {
     title: "Trello App Clone",
+    isFeatured: true,
     description:
       "Drag-and-drop kanban board using React DnD and Supabase for todos.",
     tech: [
