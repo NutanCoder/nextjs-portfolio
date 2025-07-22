@@ -19,9 +19,23 @@ export const projects = [
       { name: "Supabase", icon: <SiSupabase className="text-green-600" /> },
       { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
     ],
-    image: "/projects/expense-react.png",
-    github: "https://github.com/NutanCoder/expense-manager-react",
-    link: "https://github.com/NutanCoder/expense-manager-react",
+    image: "/projects/expense_manager.png",
+    github: "https://github.com/NutanCoder/expense-manager-supabase",
+    link: "https://hisaab-book.netlify.app/",
+    icon: <LayoutDashboard className="text-blue-600 w-6 h-6" />,
+  },
+  {
+    title: "Quiz App (React + Supabase)",
+    description:
+      "Modern React-based Quiz App with auth,user profile and quiz management",
+    tech: [
+      { name: "React", icon: <FaReact className="text-blue-500" /> },
+      { name: "Supabase", icon: <SiSupabase className="text-green-600" /> },
+      { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
+    ],
+    image: "/projects/quiz.png",
+    github: "https://github.com/NutanCoder/quiz-react-app",
+    link: "https://quiz-nagar.netlify.app/",
     icon: <LayoutDashboard className="text-blue-600 w-6 h-6" />,
   },
   {
@@ -76,8 +90,8 @@ export const projects = [
       { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
     ],
     image: "/projects/trello.png",
-    github: "https://github.com/NutanCoder/trello-clone",
-    link: "https://github.com/NutanCoder/trello-clone",
+    github: "https://github.com/NutanCoder/trello-todo-board",
+    link: "https://trello-todo-board.netlify.app/",
     icon: <LayoutDashboard className="text-cyan-600 w-6 h-6" />,
   },
   {

@@ -5,12 +5,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export function ProjectCard({ project }: { project: any }) {
   return (
     <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
-      <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
+      <div className="relative w-full h-48 rounded-lg shadow overflow-hidden mb-4">
         <Image
           src={project.image}
           alt={project.title}
-          fill
-          className="object-cover"
+          width={400}
+          height={300}
+          className="object-cover h-48 border-1 rounded-lg shadow border-gray-400"
         />
       </div>
 
