@@ -63,7 +63,7 @@ export const projects = [
       { name: "Supabase", icon: <SiSupabase className="text-green-600" /> },
       { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
     ],
-    image: "/projects/stayeasy-admin.png",
+    image: "/projects/stayeasy_admin.png",
     github: "https://github.com/NutanCoder/stayeasy-admin",
     link: "https://github.com/NutanCoder/stayeasy-admin",
     icon: <LayoutDashboard className="text-purple-600 w-6 h-6" />,
@@ -96,19 +96,5 @@ export const projects = [
     github: "https://github.com/NutanCoder/trello-todo-board",
     link: "https://trello-todo-board.netlify.app/",
     icon: <LayoutDashboard className="text-cyan-600 w-6 h-6" />,
-  },
-  {
-    title: "Expense Manager (Laravel)",
-    description:
-      "Track and categorize daily expenses with charts and category filters.",
-    tech: [
-      { name: "Laravel", icon: <FaLaravel className="text-red-500" /> },
-      { name: "MySQL", icon: <SiMysql className="text-blue-700" /> },
-      { name: "Bootstrap", icon: <SiBootstrap className="text-indigo-500" /> },
-    ],
-    image: "/projects/expense-laravel.png",
-    github: "https://github.com/NutanCoder/expense-manager",
-    link: "https://github.com/NutanCoder/expense-manager",
-    icon: <LayoutDashboard className="text-red-600 w-6 h-6" />,
   },
 ];
